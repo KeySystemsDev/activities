@@ -1,0 +1,23 @@
+{
+        "user": "mlopeznuevo",
+        "to": ["mlopez@keysystemsca.com","propiaweb2667@hotmail.com"],
+        "cc": ["mlopez@keysystemsca.com","propiaweb2667@hotmail.com"],
+        "bcc": ["mlopez@keysystemsca.com","propiaweb2667@hotmail.com"],
+        "activity": [
+            {
+		          "title": "Hacer la cama",
+		          "descriction": "pararme cepillarme y hacer la cama",
+              "expiration": "25/06/2018"
+		        },
+            {
+              "title": "Desayunar",
+              "descriction": "Preparar dos panes",
+              "expiration": "26/06/2018"
+            },
+            {
+              "title": "Mandar Neobux",
+              "descriction": "Mandar los anuncios de neobux y luego vr como van los referidos",
+              "expiration": "28/06/2018"
+            }
+        ]
+}

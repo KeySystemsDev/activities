@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "7b2a70a7-b287-43e6-ae9d-00da0d5b97d7",
+		"name": "Activities",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3002/api/activities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"user\": \"mlopeznuevo\",\r\n        \"to\": [\"mlopez@keysystemsca.com\",\"propiaweb2667@hotmail.com\"],\r\n        \"cc\": [\"mlopez@keysystemsca.com\",\"propiaweb2667@hotmail.com\"],\r\n        \"bcc\": [\"mlopez@keysystemsca.com\",\"propiaweb2667@hotmail.com\"],\r\n        \"activity\": [\r\n            {\r\n\t\t      \"title\": \"Hacer la cama\",\r\n\t\t      \"descriction\": \"pararme cepillarme y hacer la cama\",\r\n              \"expiration\": \"25/06/2018\"\r\n\t\t        },\r\n            {\r\n              \"title\": \"Desayunar\",\r\n              \"descriction\": \"Preparar dos panes\",\r\n              \"expiration\": \"26/06/2018\"\r\n            },\r\n            {\r\n              \"title\": \"Mandar Neobux\",\r\n              \"descriction\": \"Mandar los anuncios de neobux y luego vr como van los referidos\",\r\n              \"expiration\": \"28/06/2018\"\r\n            }\r\n        ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"activities"
+					]
+				},
+				"description": "enviar or post y guardar actividades\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/activities/mlopeznuevo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3002/api/activities/mlopeznuevo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"activities",
+						"mlopeznuevo"
+					]
+				},
+				"description": "Buscar actividades por usuario"
+			},
+			"response": []
+		}
+	]
+}
